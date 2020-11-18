@@ -1,0 +1,343 @@
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  text-decoration: none;
+  margin: 0;
+}
+
+.menuPrincipal__item {
+  color: #f7cac9;
+  font-family: "Miriam Libre", sans-serif;
+  font-size: medium;
+  font-style: italic;
+  text-decoration: none;
+  display: inline-block;
+  width: 180px;
+  height: 30px;
+  border: solid 3px #f7cac9;
+  margin: 0;
+  padding: 1px 10px;
+  text-align: center;
+  position: relative;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+.delMenu:hover {
+  background-color: #ffd5dc;
+}
+
+#redesSociales {
+  font-style: italic;
+  color: pink;
+  font-size: medium;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+ul > li {
+  display: inline-block;
+  position: relative;
+}
+
+nav li :hover {
+  background-color: #fff;
+  color: #000;
+}
+
+nav li > ul {
+  display: none;
+}
+
+nav li:hover > ul {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 200%;
+}
+
+.menuPrincipal__subMenuItem {
+  color: #b3cee5;
+  font-family: "Miriam Libre", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.menuPrincipal {
+  border-color: #f7cac9;
+  display: inline-block;
+}
+
+.separador {
+  color: #b3cee5;
+  font-size: 1.8rem;
+  font-family: "Miriam Libre", sans-serif;
+  font-style: italic;
+  letter-spacing: 5px;
+  margin-top: 15px;
+}
+
+#parrafito {
+  font-size: 1.5rem;
+  background-color: #b3cee5;
+  font-style: italic;
+  font-family: "Miriam Libre", sans-serif;
+}
+
+#musicImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.contenedor {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1064px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.banner {
+  width: 100%;
+}
+
+@-webkit-keyframes aparecer_jeje {
+  0% {
+    -webkit-transform: translate(0, -65px);
+            transform: translate(0, -65px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@keyframes aparecer_jeje {
+  0% {
+    -webkit-transform: translate(0, -65px);
+            transform: translate(0, -65px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+.logo {
+  width: 150px;
+  -webkit-animation-name: aparecer_jeje;
+          animation-name: aparecer_jeje;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.cabeza {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.artista__item {
+  display: inline-block;
+  color: #f7cac9;
+  font-style: italic;
+  list-style: circle;
+  font-size: medium;
+  font-family: "Miriam Libre", sans-serif;
+}
+
+#artista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.grillaOfertas__item {
+  background-color: #f7cac9;
+  border: 2px solid #b3cee5;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.grillaOfertas__item > img {
+  width: 100%;
+  height: 100%;
+}
+
+.grillaTendencias__item:hover, .lightstickGrilla__item:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+.grillaOfertas__item:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+.grillaOfertas, .musicImages {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr 1fr;
+      grid-template-columns: 2fr 2fr 1fr;
+  -ms-grid-rows: 150px 150px;
+      grid-template-rows: 150px 150px;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  row-gap: 15px;
+      grid-template-areas: "itemUno itemUno itemCuatro" "itemDos itemTres itemCuatro";
+}
+
+.itemUno {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: itemUno;
+}
+
+.itemDos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: itemDos;
+}
+
+.itemTres {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: itemTres;
+}
+
+.itemCuatro {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: itemCuatro;
+}
+
+.grillaTendencias {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 2fr;
+      grid-template-columns: 1fr 2fr 2fr;
+  -ms-grid-rows: 150px 150px;
+      grid-template-rows: 150px 150px;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  row-gap: 15px;
+      grid-template-areas: "itemCuatro itemUno itemUno" "itemCuatro itemDos itemTres";
+}
+
+.grillaTendencias__item, .lightstickGrilla__item {
+  background-color: #f7cac9;
+  border: 2px solid #b3cee5;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.grillaTendencias__item > img, .lightstickGrilla__item > img {
+  width: 100%;
+  height: 100%;
+}
+
+.lightstickGrilla {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 2fr;
+      grid-template-columns: 1fr 2fr 2fr;
+  -ms-grid-rows: 150px 150px;
+      grid-template-rows: 150px 150px;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  row-gap: 15px;
+      grid-template-areas: "itemCuatro itemUno itemUno" "itemCuatro itemDos itemTres";
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tablita {
+  font-size: 1.5rem;
+}
+
+.botonsito {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.piesito__item {
+  background-color: #f7cac9;
+  display: inline-block;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.piesito__item > img {
+  height: 50px;
+  width: 50px;
+}
+
+.piesito__text {
+  display: inline-block;
+  color: whitesmoke;
+  list-style: circle;
+  font-size: medium;
+  font-family: "Miriam Libre", sans-serif;
+  font-weight: bolder;
+  margin-left: 5px;
+}
+
+.piesito {
+  background-color: #f7cac9;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+/*# sourceMappingURL=delindex.css.map */
