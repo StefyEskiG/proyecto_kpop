@@ -1,6 +1,6 @@
 $color-principal: #f7cac9;
 $color-secundario: #b3cee5;
-$typo-titulo: "Miriam Libre", sans-serif;
+$typo-titulo: "Montserrat", sans-serif;
 $ancho-icon: 200px;
 $alto-icon: 200px;
 
@@ -78,7 +78,7 @@ nav li:hover > ul {
 
 .separador {
   color: $color-secundario;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: $typo-titulo;
   font-style: italic;
   letter-spacing: 5px;
@@ -283,6 +283,10 @@ h2 {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   text-align: center;
+}
+
+.miBarrita {
+  background-color: rgba($color-principal, 0.5);
 }
