@@ -64,19 +64,6 @@ nav li:hover > ul {
   width: 200%;
 }
 
-.menuPrincipal__subMenuItem {
-  color: #b3cee5;
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  font-style: italic;
-  text-decoration: none;
-}
-
-.menuPrincipal {
-  border-color: #f7cac9;
-  display: inline-block;
-}
-
 .separador {
   color: #b3cee5;
   font-size: 2rem;
@@ -112,7 +99,7 @@ nav li:hover > ul {
   padding-right: 10px;
 }
 
-.banner {
+.bannerPrincipal {
   width: 100%;
 }
 

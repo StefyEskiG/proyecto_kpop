@@ -63,18 +63,6 @@ nav li:hover > ul {
   left: 0px;
   width: 200%;
 }
-.menuPrincipal__subMenuItem {
-  color: $color-secundario;
-  font-family: $typo-titulo;
-  font-size: 15px;
-  font-style: italic;
-  text-decoration: none;
-}
-
-.menuPrincipal {
-  border-color: $color-principal;
-  display: inline-block;
-}
 
 .separador {
   color: $color-secundario;
@@ -105,7 +93,7 @@ nav li:hover > ul {
   padding-left: 10px;
   padding-right: 10px;
 }
-.banner {
+.bannerPrincipal {
   width: 100%;
 }
 
