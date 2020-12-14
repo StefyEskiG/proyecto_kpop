@@ -61,9 +61,17 @@ nav li:hover > ul {
 }
 
 .parrafito {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-style: italic;
   font-family: "Montserrat", sans-serif;
+  padding-right: 85px;
+  color: #888888;
 }
 
 .sobreNosotrxs {
@@ -76,6 +84,9 @@ nav li:hover > ul {
   margin-top: 20px;
   padding-left: 20px;
   padding-right: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bannerPrincipal {
@@ -270,6 +281,31 @@ nav li:hover > ul {
           justify-content: center;
 }
 
+.enviarForm {
+  background-color: #f7cac9;
+  color: #fff !important;
+  border-color: #fff;
+  margin-top: 10px;
+}
+
+.borrarForm {
+  background-color: #b3cee5;
+  color: #fff !important;
+  border-color: #fff;
+  margin-top: 8px;
+}
+
+form {
+  -webkit-box-shadow: 5px 5px 5px 5px #888888;
+          box-shadow: 5px 5px 5px 5px #888888;
+  padding: 15px;
+  box-shadow: 1px 6px 30px 0px rgba(142, 142, 142, 0.75);
+  -webkit-box-shadow: 1px 6px 30px 0px rgba(142, 142, 142, 0.75);
+  -moz-box-shadow: 1px 6px 30px 0px rgba(142, 142, 142, 0.75);
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
 .elFormulario input {
   display: block;
   -webkit-box-align: center;
@@ -278,12 +314,36 @@ nav li:hover > ul {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   width: 100%;
+  font-weight: bolder;
+  color: #1a1919;
+  padding: 10px;
+  border: 1px solid #ebe8e8;
+  border-radius: 5px;
 }
 
 .elFormulario label {
   display: block;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  font-weight: lighter;
+  color: #9e9e9e;
+}
+
+.elFormulario textarea {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  width: 100%;
+  font-weight: bolder;
+  color: #1a1919;
+  padding: 10px;
+  border: 1px solid #ebe8e8;
+  border-radius: 5px;
 }
 
 h2 {
