@@ -57,33 +57,25 @@ nav li:hover > ul {
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   letter-spacing: 5px;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
-#parrafito {
+.parrafito {
   font-size: 1.5rem;
-  background-color: #b3cee5;
   font-style: italic;
   font-family: "Montserrat", sans-serif;
 }
 
-#musicImages {
+.sobreNosotrxs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-}
-
-.contenedor {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1064px;
-  padding-left: 10px;
-  padding-right: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 50px;
 }
 
 .bannerPrincipal {
@@ -267,6 +259,31 @@ nav li:hover > ul {
           column-gap: 15px;
   row-gap: 15px;
       grid-template-areas: "itemCuatro itemUno itemUno" "itemCuatro itemDos itemTres";
+}
+
+.elFormulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.elFormulario input {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.elFormulario label {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
 }
 
 h2 {

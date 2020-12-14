@@ -62,29 +62,23 @@ nav li:hover > ul {
   font-family: $typo-titulo;
   font-style: italic;
   letter-spacing: 5px;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
-#parrafito {
+.parrafito {
   font-size: 1.5rem;
-  background-color: $color-secundario;
+
   font-style: italic;
   font-family: $typo-titulo;
 }
-
-#musicImages {
+.sobreNosotrxs {
   display: flex;
-  flex-direction: column-reverse;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 50px;
 }
 
-.contenedor {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1064px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
 .bannerPrincipal {
   width: 100%;
 }
@@ -215,6 +209,22 @@ nav li:hover > ul {
   grid-template-areas:
     "itemCuatro itemUno itemUno"
     "itemCuatro itemDos itemTres";
+}
+.elFormulario {
+  display: flex;
+  justify-content: center;
+}
+.elFormulario input {
+  display: block;
+  align-items: center;
+  font-family: $typo-titulo;
+  font-size: 1.5rem;
+  width: 100%;
+}
+.elFormulario label {
+  display: block;
+  font-family: $typo-titulo;
+  font-size: 1.5rem;
 }
 
 .lightstickGrilla__item {
