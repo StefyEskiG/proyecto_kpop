@@ -29,19 +29,6 @@ ul {
   background-color: #ffd5dc;
 }
 
-#redesSociales {
-  font-style: italic;
-  color: pink;
-  font-size: medium;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
 ul > li {
   display: inline-block;
   position: relative;
@@ -162,7 +149,7 @@ nav li:hover > ul {
   font-family: "Montserrat", sans-serif;
 }
 
-#artista {
+.artista {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,6 +161,8 @@ nav li:hover > ul {
           align-items: center;
   padding-left: 30px;
   padding-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .grillaOfertas__item {
@@ -254,7 +243,6 @@ nav li:hover > ul {
 }
 
 .grillaTendencias__item, .lightstickGrilla__item {
-  background-color: #f7cac9;
   border: 2px solid #b3cee5;
   height: 100%;
   -webkit-transition: -webkit-transform 0.5s ease;
