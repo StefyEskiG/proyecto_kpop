@@ -40,31 +40,7 @@ html {
   width: 100%;
 }
 
-@keyframes aparecer_jeje {
-  0% {
-    transform: translate(0, -65px);
-  }
-
-  100% {
-    transform: translate(0, 0px);
-  }
-}
-.logo {
-  width: 150px;
-  animation-name: aparecer_jeje;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-  animation-duration: 2s;
-  animation-delay: 0s;
-}
-
-.cabeza {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 20px;
-  padding-top: 10px;
-}
+@import "componentes/cabecera.scss";
 
 .artista__item {
   display: inline-block;

@@ -1,0 +1,50 @@
+@-webkit-keyframes aparecer-desde-arriba {
+  0% {
+    -webkit-transform: translate(0, -65px);
+            transform: translate(0, -65px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@keyframes aparecer-desde-arriba {
+  0% {
+    -webkit-transform: translate(0, -65px);
+            transform: translate(0, -65px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+.cabecera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.cabecera__logo {
+  width: 150px;
+  -webkit-animation-name: aparecer-desde-arriba;
+          animation-name: aparecer-desde-arriba;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+/*# sourceMappingURL=cabecera.css.map */

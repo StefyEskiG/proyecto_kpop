@@ -1,0 +1,26 @@
+@keyframes aparecer-desde-arriba {
+  0% {
+    transform: translate(0, -65px);
+  }
+
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+
+  &__logo {
+    width: 150px;
+    animation-name: aparecer-desde-arriba;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-delay: 0s;
+  }
+}
