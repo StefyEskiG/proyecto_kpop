@@ -63,6 +63,7 @@ nav li:hover > ul {
   font-style: italic;
   letter-spacing: 5px;
   margin-top: 25px;
+  margin-bottom: 20px;
 }
 
 .parrafito {
@@ -299,7 +300,7 @@ h2 {
   margin-left: 25px;
   margin-right: 25px;
 
-  > img {
+  & > img {
     height: $alto-icon / 4;
     width: $ancho-icon / 4;
   }
