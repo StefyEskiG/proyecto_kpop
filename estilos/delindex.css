@@ -2,62 +2,13 @@ html {
   font-size: 62.5%;
 }
 
-ul {
-  text-decoration: none;
-  margin: 0;
-}
-
-.menuPrincipal__item {
-  color: #f7cac9;
-  font-family: "Montserrat", sans-serif;
-  font-size: medium;
-  font-style: italic;
-  text-decoration: none;
-  display: inline-block;
-  width: 180px;
-  height: 30px;
-  border: solid 3px #f7cac9;
-  margin: 0;
-  padding: 1px 10px;
-  text-align: center;
-  position: relative;
-  -webkit-transition: background-color 1s;
-  transition: background-color 1s;
-}
-
-.delMenu:hover {
-  background-color: #ffd5dc;
-}
-
-ul > li {
-  display: inline-block;
-  position: relative;
-}
-
-nav li :hover {
-  background-color: #fff;
-  color: #000;
-}
-
-nav li > ul {
-  display: none;
-}
-
-nav li:hover > ul {
-  display: block;
-  position: absolute;
-  top: 30px;
-  left: 0px;
-  width: 200%;
-}
-
 .separador {
   color: #b3cee5;
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   letter-spacing: 5px;
-  margin-top: 25px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -169,22 +120,7 @@ nav li:hover > ul {
   margin-bottom: 30px;
 }
 
-.grillaOfertas__item {
-  background-color: #f7cac9;
-  border: 2px solid #b3cee5;
-  height: 100%;
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-}
-
-.grillaOfertas__item > img {
-  width: 100%;
-  height: 100%;
-}
-
-.grillaTendencias__item:hover, .lightstickGrilla__item:hover {
+.grillaTendencias__item:hover {
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
 }
@@ -192,19 +128,6 @@ nav li:hover > ul {
 .grillaOfertas__item:hover {
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
-}
-
-.grillaOfertas, .musicImages {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 2fr 1fr;
-      grid-template-columns: 2fr 2fr 1fr;
-  -ms-grid-rows: 150px 150px;
-      grid-template-rows: 150px 150px;
-  -webkit-column-gap: 15px;
-          column-gap: 15px;
-  row-gap: 15px;
-      grid-template-areas: "itemUno itemUno itemCuatro" "itemDos itemTres itemCuatro";
 }
 
 .itemUno {
@@ -246,7 +169,7 @@ nav li:hover > ul {
       grid-template-areas: "itemCuatro itemUno itemUno" "itemCuatro itemDos itemTres";
 }
 
-.grillaTendencias__item, .lightstickGrilla__item {
+.grillaTendencias__item {
   border: 2px solid #b3cee5;
   height: 100%;
   -webkit-transition: -webkit-transform 0.5s ease;
@@ -255,22 +178,9 @@ nav li:hover > ul {
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
-.grillaTendencias__item > img, .lightstickGrilla__item > img {
+.grillaTendencias__item > img {
   width: 100%;
   height: 100%;
-}
-
-.lightstickGrilla {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 2fr 2fr;
-      grid-template-columns: 1fr 2fr 2fr;
-  -ms-grid-rows: 150px 150px;
-      grid-template-rows: 150px 150px;
-  -webkit-column-gap: 15px;
-          column-gap: 15px;
-  row-gap: 15px;
-      grid-template-areas: "itemCuatro itemUno itemUno" "itemCuatro itemDos itemTres";
 }
 
 .elFormulario {
@@ -347,20 +257,8 @@ form {
   border-radius: 5px;
 }
 
-h2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .tablita {
   font-size: 1.5rem;
-}
-
-.botonsito {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 
 .piesito__item {

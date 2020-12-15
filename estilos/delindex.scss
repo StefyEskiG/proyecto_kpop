@@ -8,61 +8,13 @@ html {
   font-size: 62.5%;
 }
 
-ul {
-  text-decoration: none;
-  margin: 0;
-}
-
-.menuPrincipal__item {
-  color: $color-principal;
-  font-family: $typo-titulo;
-  font-size: medium;
-  font-style: italic;
-  text-decoration: none;
-  display: inline-block;
-  width: 180px;
-  height: 30px;
-  border: solid 3px $color-principal;
-  margin: 0;
-  padding: 1px 10px;
-  text-align: center;
-  position: relative;
-  transition: background-color 1s;
-}
-
-.delMenu:hover {
-  background-color: rgb(255, 213, 220);
-}
-
-ul > li {
-  display: inline-block;
-  position: relative;
-}
-
-nav li :hover {
-  background-color: #fff;
-  color: #000;
-}
-
-nav li > ul {
-  display: none;
-}
-
-nav li:hover > ul {
-  display: block;
-  position: absolute;
-  top: 30px;
-  left: 0px;
-  width: 200%;
-}
-
 .separador {
   color: $color-secundario;
   font-size: 2rem;
   font-family: $typo-titulo;
   font-style: italic;
   letter-spacing: 5px;
-  margin-top: 25px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -133,35 +85,12 @@ nav li:hover > ul {
   margin-bottom: 30px;
 }
 
-.grillaOfertas__item {
-  background-color: $color-principal;
-  border: 2px solid $color-secundario;
-  height: 100%;
-  transition: transform 0.5s ease;
-
-  > img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
 .grillaTendencias__item:hover {
   transform: scale(1.08);
 }
 
 .grillaOfertas__item:hover {
   transform: scale(1.08);
-}
-
-.grillaOfertas {
-  display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
-  grid-template-rows: 150px 150px;
-  column-gap: 15px;
-  row-gap: 15px;
-  grid-template-areas:
-    "itemUno itemUno itemCuatro"
-    "itemDos itemTres itemCuatro";
 }
 
 .itemUno {
@@ -202,19 +131,6 @@ nav li:hover > ul {
   }
 }
 
-.musicImages {
-  @extend .grillaOfertas;
-}
-.lightstickGrilla {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-template-rows: 150px 150px;
-  column-gap: 15px;
-  row-gap: 15px;
-  grid-template-areas:
-    "itemCuatro itemUno itemUno"
-    "itemCuatro itemDos itemTres";
-}
 .elFormulario {
   display: flex;
   justify-content: center;
@@ -274,24 +190,8 @@ form {
   border-radius: 5px;
 }
 
-.lightstickGrilla__item {
-  @extend .grillaTendencias__item;
-}
-
-h2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .tablita {
   font-size: 1.5rem;
-}
-
-.botonsito {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 
 .piesito__item {
