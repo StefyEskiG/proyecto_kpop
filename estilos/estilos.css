@@ -292,7 +292,8 @@ form {
   text-align: center;
 }
 
-.miBarrita {
+.menuPrincipal {
   background-color: rgba(247, 202, 201, 0.5);
+  font-family: "Montserrat", sans-serif;
 }
 /*# sourceMappingURL=estilos.css.map */

@@ -6,13 +6,13 @@
     <title>Lightstick - Kmerch</title>
 
     <meta
-    name="description"
-    content="Somos la mejor tienda de kpop de Argentina, acá encontrarás los mejores lightsticks de IU, BLACKPINK, BTS, SEVENTEEN, G-IDLE, MAMAMOO."
-  />
-  <meta
-    name="keywords"
-    content="idol, korean, kpop, jpop, hallyu, seventeen, bts, twice, lightstick, mamamoo, block b"
-  />
+      name="description"
+      content="Somos la mejor tienda de kpop de Argentina, acá encontrarás los mejores lightsticks de IU, BLACKPINK, BTS, SEVENTEEN, G-IDLE, MAMAMOO."
+    />
+    <meta
+      name="keywords"
+      content="idol, korean, kpop, jpop, hallyu, seventeen, bts, twice, lightstick, mamamoo, block b"
+    />
 
     <link
       rel="stylesheet"
@@ -21,8 +21,6 @@
       crossorigin="anonymous"
     />
 
-    
-    
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
@@ -34,11 +32,15 @@
 
   <body>
     <div class="container">
-      <header >
-        <img src="imagenesdos/loguito.png" class="cabecera__logo" />
+      <!-- Inicio Cabecera -->
+      <header class="cabecera">
+        <img
+          src="imagenesdos/loguito.png"
+          class="cabecera__logo"
+          alt="kmerch"
+        />
 
-        <nav class="miBarrita navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#">MENU</a>
+        <nav class="menuPrincipal navbar navbar-expand-lg navbar-light">
           <button
             class="navbar-toggler"
             type="button"
@@ -46,11 +48,10 @@
             data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown"
             aria-expanded="false"
-            aria-label="Toggle navigation"
+            aria-label="Abrir navegacion"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item active">
@@ -91,64 +92,84 @@
           </div>
         </nav>
       </header>
-      <h1 class="separador">
-        ¡Apoyá a tus artistas favoritos en sus conciertos!
-      </h1>
-      <div class="card-group">
-        <div class="card">
-          <img src="imagenes/seventeenlightstick.jfif" class="card-img-top" alt="Bara luminosa (lightstick) del grupo de kpop Seventeen" />
-          <div class="card-body">
-            <h5 class="card-title">Lightstick-Seventeen</h5>
-            <p class="card-text">
-              Apoyá a tu grupo favorito comprando el Lightstick de Seventeen.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">$7500</small>
-            </p>
+      <!-- Fin Cabecera -->
+      <!--  Inicio Contenido -->
+      <main>
+        <h1 class="separador">
+          ¡Apoyá a tus artistas favoritos en sus conciertos!
+        </h1>
+        <div class="card-group">
+          <div class="card">
+            <img
+              src="imagenes/seventeenlightstick.jfif"
+              class="card-img-top"
+              alt="Bara luminosa (lightstick) del grupo de kpop Seventeen"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lightstick-Seventeen</h5>
+              <p class="card-text">
+                Apoyá a tu grupo favorito comprando el Lightstick de Seventeen.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">$7500</small>
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="imagenes/blackpinklight.jfif"
+              class="card-img-top"
+              alt="Bara luminosa (lightstick) del grupo de kpop Blackpink"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lightstick-Blackpink</h5>
+              <p class="card-text">
+                Apoyá a tu grupo favorito comprando el lightstick de Blackpink.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">$8000</small>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="imagenes/gidlelightstick.jpg"
+              class="card-img-top"
+              alt="Bara luminosa (lightstick) del grupo de kpop G-idle"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lightstick- G-idle</h5>
+              <p class="card-text">
+                Apoyá a tu grupo favorito comprando el lightstick de G-idle.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">$6000</small>
+              </p>
+            </div>
           </div>
         </div>
-
-      <div class="card">
-        <img src="imagenes/blackpinklight.jfif" class="card-img-top" alt="Bara luminosa (lightstick) del grupo de kpop Blackpink" />
-        <div class="card-body">
-          <h5 class="card-title">Lightstick-Blackpink</h5>
-          <p class="card-text">
-            Apoyá a tu grupo favorito comprando el lightstick de Blackpink.
-          </p>
-          <p class="card-text">
-            <small class="text-muted">$8000</small>
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="imagenes/gidlelightstick.jpg" class="card-img-top" alt="Bara luminosa (lightstick) del grupo de kpop G-idle" />
-        <div class="card-body">
-          <h5 class="card-title">Lightstick- G-idle</h5>
-          <p class="card-text">
-            Apoyá a tu grupo favorito comprando el lightstick de G-idle.
-          </p>
-          <p class="card-text">
-            <small class="text-muted">$6000</small>
-          </p>
-        </div>
-      </div>
+      </main>
+      <!-- Fin Contenido -->
     </div>
-  </div>
-  <footer class="piesito">
-    <div class="contenedor">
-      <div class="piesito__item">
-        <img src="imagenes/insta.png" class="instaIcon" />
-        <span class="piesito__text">K.merch</span>
-      </div>
-      <div class="piesito__item">
-        <img src="imagenes/fb.png" class="fbIcon" />
-        <span class="piesito__text">Korean Kmerch</span>
-      </div>
-      <div class="piesito__item">
-        <img src="imagenes/tw.png" class="twIcon" />
-        <span class="piesito__text">KoreanKmerch</span>
+    <!-- Inicio Footer -->
+    <footer class="piesito">
+      <div class="contenedor">
+        <div class="piesito__item">
+          <img src="imagenes/insta.png" class="instaIcon" />
+          <span class="piesito__text">K.merch</span>
+        </div>
+        <div class="piesito__item">
+          <img src="imagenes/fb.png" class="fbIcon" />
+          <span class="piesito__text">Korean Kmerch</span>
+        </div>
+        <div class="piesito__item">
+          <img src="imagenes/tw.png" class="twIcon" />
+          <span class="piesito__text">KoreanKmerch</span>
+        </div>
       </div>
     </footer>
+    <!-- Fin Footer -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
