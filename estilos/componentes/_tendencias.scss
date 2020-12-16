@@ -1,0 +1,49 @@
+.grillaTendencias {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 150px 150px;
+  column-gap: 15px;
+  row-gap: 15px;
+  grid-template-areas:
+    "itemCuatro itemUno itemUno"
+    "itemCuatro itemDos itemTres";
+
+  @media (max-width: 480px) {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "itemUno itemUno"
+      "itemCuatro itemDos"
+      "itemCuatro itemTres";
+  }
+
+  &__item {
+    border: 2px solid $color-secundario;
+    height: 100%;
+    transition: transform 0.5s ease;
+    &:hover {
+      transform: scale(1.08);
+    }
+    > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.itemUno {
+  grid-area: itemUno;
+}
+
+.itemDos {
+  grid-area: itemDos;
+}
+
+.itemTres {
+  grid-area: itemTres;
+}
+
+.itemCuatro {
+  grid-area: itemCuatro;
+}

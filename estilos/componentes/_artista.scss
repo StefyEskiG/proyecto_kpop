@@ -1,0 +1,32 @@
+.artista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  @media (max-width: 480px) {
+    display: block;
+  }
+
+  &__item {
+    display: inline-block;
+    color: $color-principal;
+    font-style: italic;
+    list-style: circle;
+    font-size: medium;
+    font-family: $typo-titulo;
+
+    @media (max-width: 480px) {
+      display: block;
+    }
+  }
+  &__video {
+    width: 50%;
+    @media (max-width: 480px) {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}

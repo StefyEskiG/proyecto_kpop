@@ -2,7 +2,7 @@ html {
   font-size: 62.5%;
 }
 
-.separador {
+.titulo {
   color: #b3cee5;
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
@@ -26,6 +26,12 @@ html {
   color: #888888;
 }
 
+@media (max-width: 800px) {
+  .parrafito {
+    font-size: 1.5rem;
+  }
+}
+
 .sobreNosotrxs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,6 +45,14 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 480px) {
+  .sobreNosotrxs {
+    font-size: 1.5rem;
+    display: block;
+    padding: 0px;
+  }
 }
 
 .bannerPrincipal {
@@ -95,29 +109,38 @@ html {
           animation-delay: 0s;
 }
 
-.artista__item {
-  display: inline-block;
-  color: #f7cac9;
-  font-style: italic;
-  list-style: circle;
-  font-size: medium;
-  font-family: "Montserrat", sans-serif;
+.grillaTendencias {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 2fr;
+      grid-template-columns: 1fr 2fr 2fr;
+  -ms-grid-rows: 150px 150px;
+      grid-template-rows: 150px 150px;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  row-gap: 15px;
+      grid-template-areas: "itemCuatro itemUno itemUno" "itemCuatro itemDos itemTres";
 }
 
-.artista {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+@media (max-width: 480px) {
+  .grillaTendencias {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 2fr;
+        grid-template-columns: 2fr 2fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "itemUno itemUno" "itemCuatro itemDos" "itemCuatro itemTres";
+  }
+}
+
+.grillaTendencias__item {
+  border: 2px solid #b3cee5;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
 .grillaTendencias__item:hover {
@@ -125,9 +148,9 @@ html {
           transform: scale(1.08);
 }
 
-.grillaOfertas__item:hover {
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
+.grillaTendencias__item > img {
+  width: 100%;
+  height: 100%;
 }
 
 .itemUno {
@@ -156,31 +179,104 @@ html {
   grid-area: itemCuatro;
 }
 
-.grillaTendencias {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 2fr 2fr;
-      grid-template-columns: 1fr 2fr 2fr;
-  -ms-grid-rows: 150px 150px;
-      grid-template-rows: 150px 150px;
-  -webkit-column-gap: 15px;
-          column-gap: 15px;
-  row-gap: 15px;
-      grid-template-areas: "itemCuatro itemUno itemUno" "itemCuatro itemDos itemTres";
+.artista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0;
+  padding-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.grillaTendencias__item {
-  border: 2px solid #b3cee5;
-  height: 100%;
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+@media (max-width: 480px) {
+  .artista {
+    display: block;
+  }
 }
 
-.grillaTendencias__item > img {
-  width: 100%;
-  height: 100%;
+.artista__item {
+  display: inline-block;
+  color: #f7cac9;
+  font-style: italic;
+  list-style: circle;
+  font-size: medium;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 480px) {
+  .artista__item {
+    display: block;
+  }
+}
+
+.artista__video {
+  width: 50%;
+}
+
+@media (max-width: 480px) {
+  .artista__video {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.pieDePagina {
+  background-color: #f7cac9;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.pieDePagina__text {
+  display: inline-block;
+  color: whitesmoke;
+  list-style: circle;
+  font-size: medium;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  margin-left: 5px;
+}
+
+.pieDePagina__item {
+  background-color: #f7cac9;
+  display: inline-block;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+@media (max-width: 800px) {
+  .pieDePagina__item {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pieDePagina__item {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+.pieDePagina__item > img {
+  height: 50px;
+  width: 50px;
+}
+
+@media (max-width: 800px) {
+  .pieDePagina__item > img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .elFormulario {
@@ -261,39 +357,37 @@ form {
   font-size: 1.5rem;
 }
 
-.piesito__item {
-  background-color: #f7cac9;
-  display: inline-block;
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
-.piesito__item > img {
-  height: 50px;
-  width: 50px;
-}
-
-.piesito__text {
-  display: inline-block;
-  color: whitesmoke;
-  list-style: circle;
-  font-size: medium;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bolder;
-  margin-left: 5px;
-}
-
-.piesito {
-  background-color: #f7cac9;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-top: 15px;
-  margin-bottom: 0px;
-  text-align: center;
+@media (max-width: 480px) {
+  .tablita {
+    font-size: 1rem;
+  }
 }
 
 .menuPrincipal {
   background-color: rgba(247, 202, 201, 0.5);
   font-family: "Montserrat", sans-serif;
+}
+
+.video-responsive {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.productos {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=estilos.css.map */

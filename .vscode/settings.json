@@ -1,0 +1,7 @@
+{
+  "liveSassCompile.settings.excludeList": [
+    "estilos/componentes/**",
+    "**/node_modules/**",
+    ".vscode/**"
+  ]
+}

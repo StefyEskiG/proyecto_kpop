@@ -8,7 +8,7 @@ html {
   font-size: 62.5%;
 }
 
-.separador {
+.titulo {
   color: $color-secundario;
   font-size: 2rem;
   font-family: $typo-titulo;
@@ -26,6 +26,10 @@ html {
   font-family: $typo-titulo;
   padding-right: 85px;
   color: #888888;
+
+  @media (max-width: 800px) {
+    font-size: 1.5rem;
+  }
 }
 .sobreNosotrxs {
   display: flex;
@@ -34,78 +38,21 @@ html {
   padding-left: 20px;
   padding-right: 50px;
   align-items: center;
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+    display: block;
+    padding: 0px;
+  }
 }
 
 .bannerPrincipal {
   width: 100%;
 }
 
-@import "componentes/cabecera.scss";
-
-.artista__item {
-  display: inline-block;
-  color: $color-principal;
-  font-style: italic;
-  list-style: circle;
-  font-size: medium;
-  font-family: $typo-titulo;
-}
-
-.artista {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.grillaTendencias__item:hover {
-  transform: scale(1.08);
-}
-
-.grillaOfertas__item:hover {
-  transform: scale(1.08);
-}
-
-.itemUno {
-  grid-area: itemUno;
-}
-
-.itemDos {
-  grid-area: itemDos;
-}
-
-.itemTres {
-  grid-area: itemTres;
-}
-
-.itemCuatro {
-  grid-area: itemCuatro;
-}
-
-.grillaTendencias {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-template-rows: 150px 150px;
-  column-gap: 15px;
-  row-gap: 15px;
-  grid-template-areas:
-    "itemCuatro itemUno itemUno"
-    "itemCuatro itemDos itemTres";
-}
-
-.grillaTendencias__item {
-  border: 2px solid $color-secundario;
-  height: 100%;
-  transition: transform 0.5s ease;
-
-  > img {
-    width: 100%;
-    height: 100%;
-  }
-}
+@import "componentes/_cabecera.scss";
+@import "componentes/_tendencias.scss";
+@import "componentes/_artista";
+@import "componentes/_piedepagina.scss";
 
 .elFormulario {
   display: flex;
@@ -168,40 +115,34 @@ form {
 
 .tablita {
   font-size: 1.5rem;
-}
-
-.piesito__item {
-  background-color: $color-principal;
-  display: inline-block;
-  margin-left: 25px;
-  margin-right: 25px;
-
-  & > img {
-    height: $alto-icon / 4;
-    width: $ancho-icon / 4;
+  @media (max-width: 480px) {
+    font-size: 1rem;
   }
-}
-
-.piesito__text {
-  display: inline-block;
-  color: whitesmoke;
-  list-style: circle;
-  font-size: medium;
-  font-family: $typo-titulo;
-  font-weight: bolder;
-  margin-left: 5px;
-}
-
-.piesito {
-  background-color: $color-principal;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-top: 15px;
-  margin-bottom: 0px;
-  text-align: center;
 }
 
 .menuPrincipal {
   background-color: rgba($color-principal, 0.5);
   font-family: $typo-titulo;
+}
+
+.video-responsive {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+}
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.productos {
+  font-family: $typo-titulo;
+  font-size: 1.5rem;
 }
