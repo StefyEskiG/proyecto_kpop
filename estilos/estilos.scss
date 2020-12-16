@@ -1,148 +1,16 @@
 $color-principal: #f7cac9;
 $color-secundario: #b3cee5;
-$typo-titulo: "Montserrat", sans-serif;
+$typo-sitio: "Montserrat", sans-serif;
 $ancho-icon: 200px;
 $alto-icon: 200px;
 
-html {
-  font-size: 62.5%;
-}
-
-.titulo {
-  color: $color-secundario;
-  font-size: 2rem;
-  font-family: $typo-titulo;
-  font-style: italic;
-  letter-spacing: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.parrafito {
-  font-size: 2.5rem;
-  display: flex;
-  justify-content: center;
-  font-style: italic;
-  font-family: $typo-titulo;
-  padding-right: 85px;
-  color: #888888;
-
-  @media (max-width: 800px) {
-    font-size: 1.5rem;
-  }
-}
-.sobreNosotrxs {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  padding-left: 20px;
-  padding-right: 50px;
-  align-items: center;
-  @media (max-width: 480px) {
-    font-size: 1.5rem;
-    display: block;
-    padding: 0px;
-  }
-}
-
-.bannerPrincipal {
-  width: 100%;
+body {
+  font-family: $typo-sitio;
 }
 
 @import "componentes/_cabecera.scss";
 @import "componentes/_tendencias.scss";
-@import "componentes/_artista";
+@import "componentes/_artista.scss";
 @import "componentes/_piedepagina.scss";
-
-.elFormulario {
-  display: flex;
-  justify-content: center;
-}
-.enviarForm {
-  background-color: $color-principal;
-  color: #fff !important;
-  border-color: #fff;
-  margin-top: 10px;
-}
-.borrarForm {
-  background-color: $color-secundario;
-  color: #fff !important;
-  border-color: #fff;
-  margin-top: 8px;
-}
-form {
-  box-shadow: 5px 5px 5px 5px #888888;
-  padding: 15px;
-  box-shadow: 1px 6px 30px 0px rgba(142, 142, 142, 0.75);
-  -webkit-box-shadow: 1px 6px 30px 0px rgba(142, 142, 142, 0.75);
-  -moz-box-shadow: 1px 6px 30px 0px rgba(142, 142, 142, 0.75);
-  border-radius: 5px;
-  margin-bottom: 25px;
-}
-.elFormulario input {
-  display: block;
-  align-items: center;
-  font-family: $typo-titulo;
-  font-size: 1.5rem;
-  width: 100%;
-  font-weight: bolder;
-  color: rgb(26, 25, 25);
-  padding: 10px;
-  border: 1px solid rgb(235, 232, 232);
-  border-radius: 5px;
-}
-.elFormulario label {
-  display: block;
-  font-family: $typo-titulo;
-  font-size: 1.5rem;
-  margin-bottom: 0px;
-  margin-top: 10px;
-  font-weight: lighter;
-  color: rgb(158, 158, 158);
-}
-.elFormulario textarea {
-  display: block;
-  align-items: center;
-  font-family: $typo-titulo;
-  font-size: 1.5rem;
-  width: 100%;
-  font-weight: bolder;
-  color: rgb(26, 25, 25);
-  padding: 10px;
-  border: 1px solid rgb(235, 232, 232);
-  border-radius: 5px;
-}
-
-.tablita {
-  font-size: 1.5rem;
-  @media (max-width: 480px) {
-    font-size: 1rem;
-  }
-}
-
-.menuPrincipal {
-  background-color: rgba($color-principal, 0.5);
-  font-family: $typo-titulo;
-}
-
-.video-responsive {
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  position: relative;
-}
-.video-responsive iframe,
-.video-responsive object,
-.video-responsive embed {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.productos {
-  font-family: $typo-titulo;
-  font-size: 1.5rem;
-}
+@import "componentes/_utilidades.scss";
+@import "componentes/_formulario.scss";
